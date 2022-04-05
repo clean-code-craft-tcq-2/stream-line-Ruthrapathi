@@ -1,8 +1,13 @@
+#ifndef DATASENDER_H__
+#define DATASENDER_H__
+
+
 typedef struct
 {
-    float Temperature;
-    float Soc;
-    
-}BatteryParam_tst;
+  float Temperature;
+  float Soc;
+}BatParam_test;
 
-BatteryParam_tst BatteryParam_st; 
+BatParam_test BatParam_val; 
+
+#endif  /*DATASENDER_H__*/
