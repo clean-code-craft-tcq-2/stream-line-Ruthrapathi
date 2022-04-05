@@ -1,13 +1,6 @@
 
 #include <stdio.h>
-
-typedef struct
-{
-  float Temperature;
-  float Soc;
-}BatParam_test;
-
-BatParam_test BatParam_val; 
+#include "DataSender.h"
 
 void SendOperation(BatParam_val)
 {
