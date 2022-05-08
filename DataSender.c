@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 /*------ Project includes -------*/
-#include "BMS_Sender.h"
+#include "DataSender.h"
 
 /*Intial states of operation*/
 streamAlert_Status_s streamAlertStat = {NOT_SENT,FILE_ACCESS_FAILURE};
