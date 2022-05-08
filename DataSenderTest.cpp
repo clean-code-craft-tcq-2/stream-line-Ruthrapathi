@@ -6,7 +6,7 @@
 ------------------------------------------------------------------------------------*/
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 
-#include "../test/catch.hpp"
+#include "../test/test.hpp"
 #include "BMS_Sender.h"
 
 TEST_CASE("Test case 1 : Console output sent status") 
