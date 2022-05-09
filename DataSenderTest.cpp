@@ -21,17 +21,16 @@ TEST_CASE("Test case 1 : Console output sent status")
 
 }
 
-TEST_CASE("Test case 2 : validate file read and stream data with invalid  path") 
+TEST_CASE("Test case 4 : validate that file read and stream data with valid file") 
 {
     /*Inital conditions*/	
-    streamAlert_Status_s streamAlertTestStat = {SENT_TO_CONSOLE,FILE_ACCESS_SUCCESS};
+    streamAlert_Status_s streamAlertTestStat = {NOT_SENT,FILE_ACCESS_FAILURE};
     /*stub data*/ 	
-    char testFilePath[50] = "Inputdata.txt";
-    /*func call with invalid file path*/
+    char testFilePath[50] = "Sender/Inputdata.txt";
+    /*func call with valid file name*/
     streamAlertTestStat = streamFileInpData(testFilePath);
 	
-     /*REQUIRE(streamAlertTestStat.FileReadStatus   == FILE_ACCESS_FAILURE);*/
-     REQUIRE(streamAlertTestStat.ConsoleSentStatus   == NOT_SENT);
-
+    REQUIRE(streamAlertTestStat.FileReadStatus   == FILE_ACCESS_SUCCESS);
+    REQUIRE(streamAlertTestStat.ConsoleSentStatus   == SENT_TO_CONSOLE);
 }
 
