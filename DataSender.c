@@ -80,7 +80,7 @@ streamAlert_Status_s  sendDataToConsole(float temp ,float chargeRate)
 int  main()
 {
   /*File path used for streaming*/
-  char inpFilePath[50] = "Sender/Inputdata.txt";
+  char inpFilePath[50] = "Inputdata.txt";
   /* BMS data stream request from file mentioned above*/
   streamFileInpData(inpFilePath);
   return 0;
