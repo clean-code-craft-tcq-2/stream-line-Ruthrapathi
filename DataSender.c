@@ -40,8 +40,10 @@ streamAlert_Status_s  streamFileInpData(char *inpFilePath)
      {
        /*Req to print the data read from file in console*/
        sendDataToConsole(tempRead,chargerateRead);
+       printf("Jai Abi 1");
      }
      /*Close the file*/
+     printf("Jai Abi 2");
      fclose(fptr);
      
   }
@@ -68,6 +70,7 @@ streamAlert_Status_s  sendDataToConsole(float temp ,float chargeRate)
 {
    /*Prints temp and charge rate that read from file*/ 
    printf("%5.2f;%5.2f\n",temp,chargeRate);
+   printf("Jai Abi 3");
    /*Print mgs status*/  
    streamAlertStat.ConsoleSentStatus = SENT_TO_CONSOLE;
    return streamAlertStat; 
