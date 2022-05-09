@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------------
----    \file       BMS_sendertest.cpp
+---    \file       DataSenderTest.cpp
 ---   \author      Ruthrapathi 
 ---
 ---     \brief     unit testing file to test streaming BMS data
