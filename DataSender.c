@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------------
----    \file       BMS_Sender.c
+---    \file       DataSender.c
 ---   \author      Ruthrapathi 
 ---
 ---     \brief     proj file to stream BMS data
@@ -76,6 +76,7 @@ streamAlert_Status_s  sendDataToConsole(float temp ,float chargeRate)
 /*In current project stream sent from UT file 
       if UT is disbaled then main shall be invoked (based on user choice) 
 */
+
 #ifndef UNIT_TESTING
 int  main()
 {
